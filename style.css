@@ -151,7 +151,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-background.png") center/cover no-repeat;
+  background: url('imgs/home-background.png') center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -196,6 +196,10 @@ p {
 }
 
 /* About */
+#about p {
+  font-size: 20px;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -218,12 +222,13 @@ p {
   transition: all var(--animation-duration) ease;
 }
 
-.major__icon:hover i{
+.major__icon:hover i {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
 
-.major__title, .major__description {
+.major__title,
+.major__description {
   color: var(--color-dark-grey);
 }
 
@@ -446,11 +451,11 @@ p {
   border-radius: 50%;
 }
 
-.testimonial__avatar:nth-child(odd){
+.testimonial__avatar:nth-child(odd) {
   margin-right: 40px;
 }
 
-.testimonial__avatar:nth-child(even){
+.testimonial__avatar:nth-child(even) {
   margin-left: 40px;
 }
 
@@ -521,12 +526,12 @@ p {
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {
-      /* Font size */
-  --font-large: 30px;
-  --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-  --font-micro: 12px;
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
   }
 
   .navbar__toggle-btn {
@@ -535,7 +540,7 @@ p {
     right: 16px;
     font-size: var(--font-medium);
   }
-  
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
